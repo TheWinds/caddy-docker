@@ -1,10 +1,12 @@
+#  source : https://github.com/abiosoft/caddy-docker/blob/master/Dockerfile
+#  add net plugin
 #
 # Builder
 #
 FROM abiosoft/caddy:builder as builder
 
 ARG version="1.0.3"
-ARG plugins="git,cors,realip,expires,cache,cloudflare"
+ARG plugins="git,cors,realip,expires,cache,cloudflare,net"
 ARG enable_telemetry="true"
 
 # process wrapper
